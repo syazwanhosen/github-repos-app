@@ -90,7 +90,7 @@ const RepoPage = () => {
           )}
           {error && (
             <p className="text-center text-red-600 font-medium">
-              Error: {error.message || "Something went wrong."}
+              Error: {error || "Something went wrong."}
             </p>
           )}
         </div>

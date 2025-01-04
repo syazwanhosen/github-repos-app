@@ -12,7 +12,7 @@ function* fetchRepos(action) {
     const response = yield call(fetchReposApi, action.payload);
     yield put(fetchReposSuccess(response.data.items));
   } catch (error) {
-    yield put(fetchReposFailure(error.message));
+    yield put(fetchReposFailure(error.response.data.message));
   }
 }
 
