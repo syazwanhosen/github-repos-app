@@ -23,7 +23,6 @@ This is a responsive web application built using ReactJS, Next.js, Redux, Redux-
 - **State Management**: Redux, Redux-Saga
 - **Styling**: TailwindCSS
 - **API Integration**: Axios
-- **Testing**: Jest
 
 ---
 
@@ -61,14 +60,3 @@ yarn dev
 ```
 
 The app will be available at [http://localhost:3000](http://localhost:3000).
-
----
-
-## Running Tests
-
-To run the test suite using Jest:
-```bash
-npm test
-# or
-yarn test
-```
