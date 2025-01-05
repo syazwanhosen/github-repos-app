@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GitHub Repositories Viewer
 
-## Getting Started
+This is a responsive web application built using ReactJS, Next.js, Redux, Redux-Saga, and TailwindCSS. The app lists the most starred GitHub repositories created in the last 10 days with infinite scrolling functionality.
 
-First, run the development server:
+---
 
+## Features
+
+- Display the most starred GitHub repositories created in the last 10 days.
+- Each repository displays:
+  - Repository name.
+  - Description.
+  - Number of stars.
+  - Owner's username and avatar.
+- Infinite scrolling for seamless pagination.
+- Fully responsive design.
+
+---
+
+## Tech Stack
+
+- **Frontend**: ReactJS, Next.js
+- **State Management**: Redux, Redux-Saga
+- **Styling**: TailwindCSS
+- **API Integration**: Axios
+- **Testing**: Jest
+
+---
+
+## Prerequisites
+
+Ensure you have the following installed on your system:
+
+- Node.js (>= 16.x)
+- npm (>= 7.x) or Yarn (>= 1.x)
+
+---
+
+## Installation and Running the Application
+
+Follow these steps to set up and run the app locally:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/github-repos-viewer.git
+cd github-repos-viewer
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Start the Development Server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be available at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Running Tests
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To run the test suite using Jest:
+```bash
+npm test
+# or
+yarn test
+```
